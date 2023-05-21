@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85884c5e-2be5-4be9-b47d-0c32d9992430" name="Changes" comment="feat: add basic functionality" />
+    <list default="true" id="85884c5e-2be5-4be9-b47d-0c32d9992430" name="Changes" comment="docs: auto-update workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rps/TableGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rps/TableGenerator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1684594483357</updated>
       <workItem from="1684594485067" duration="6883000" />
-      <workItem from="1684607694057" duration="8086000" />
+      <workItem from="1684607694057" duration="10103000" />
+      <workItem from="1684658372693" duration="2609000" />
     </task>
     <task id="LOCAL-00001" summary="init: initial commit">
       <created>1684595061142</created>
@@ -82,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684615752408</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="docs: auto-update workspace.xml">
+      <created>1684616004396</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684616004396</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init: initial commit" />
     <MESSAGE value="feat: add basic functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add basic functionality" />
+    <MESSAGE value="docs: auto-update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: auto-update workspace.xml" />
   </component>
 </project>

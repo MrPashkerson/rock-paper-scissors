@@ -1,5 +1,7 @@
 package rps;
 
+import com.github.freva.asciitable.AsciiTable;
+
 public class TableGenerator {
     private final String[] moves;
 
@@ -8,29 +10,28 @@ public class TableGenerator {
     }
 
     public String generateTable() {
-        StringBuilder table = new StringBuilder("               ");
-        for (String move : moves) {
-            table.append(String.format("%-15s", move));
-        }
-        table.append("\n");
+        String[] headers = new String[moves.length + 1];
+        headers[0] = "Moves";
+        System.arraycopy(moves, 0, headers, 1, moves.length);
 
+        String[][] data = new String[moves.length][moves.length + 1];
         for (int i = 0; i < moves.length; i++) {
-            table.append(String.format("%-15s", moves[i]));
+            data[i][0] = moves[i];
+
             for (int j = 0; j < moves.length; j++) {
                 if (i == j) {
-                    table.append(String.format("%-15s", "Draw"));
-                    continue;
-                }
-
-                int diff = (moves.length + j - i) % moves.length;
-                if (diff > moves.length / 2) {
-                    table.append(String.format("%-15s", "Win"));
+                    data[i][j + 1] = "Draw";
                 } else {
-                    table.append(String.format("%-15s", "Lose"));
+                    int diff = (moves.length + j - i) % moves.length;
+                    if (diff > moves.length / 2) {
+                        data[i][j + 1] = "Win";
+                    } else {
+                        data[i][j + 1] = "Lose";
+                    }
                 }
             }
-            table.append("\n");
         }
-        return table.toString();
+
+        return AsciiTable.getTable(headers,data);
     }
 }
